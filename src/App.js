@@ -1,5 +1,5 @@
 import Header from "./header";
-import Article from "./article";
+import Articles from "./Articles";
 import Footer from "./footer";
 
 
@@ -8,7 +8,7 @@ function App() {
     <div>
       <Header />
       <body>
-        <Article />
+        <Articles />
       </body>
       <Footer />  
     </div>

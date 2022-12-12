@@ -1,4 +1,4 @@
-const Article = () =>{
+const Articles = () =>{
 
     const date = new Date();
 
@@ -32,7 +32,7 @@ const Article = () =>{
     return(
         <div>
             {articles.map((item,index)=> {
-                return item.date <= date ?(
+                return item.date <= date &&(
                     <div key={index}>
                         <h1>{item.title}</h1>
                         <h2>{item.subtitle}</h2>
@@ -40,10 +40,10 @@ const Article = () =>{
                         <p>{item.date.toDateString()}</p>
                         <p>{item.content}</p>
                     </div>
-                ):null;
+                );
             })}
         </div>
     )
 }
-export default Article;
+export default Articles;
 
