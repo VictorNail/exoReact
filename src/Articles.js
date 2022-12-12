@@ -1,7 +1,6 @@
+import ShowArticle from "./ShowArticle";
+
 const Articles = () =>{
-
-    const date = new Date();
-
 
     const articles = [
         {
@@ -30,19 +29,13 @@ const Articles = () =>{
     ];
 
     return(
-        <div>
-            {articles.map((item,index)=> {
-                return item.date <= date &&(
-                    <div key={index}>
-                        <h1>{item.title}</h1>
-                        <h2>{item.subtitle}</h2>
-                        <img src={item.image} aria-hidden="true" />
-                        <p>{item.date.toDateString()}</p>
-                        <p>{item.content}</p>
-                    </div>
-                );
+        <>
+            {articles.map((article)=> {
+                return (
+                    <ShowArticle currentArticle={article} />
+                )
             })}
-        </div>
+        </>
     )
 }
 export default Articles;
