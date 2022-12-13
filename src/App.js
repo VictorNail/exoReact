@@ -1,6 +1,6 @@
 import Header from "./header";
 //import Articles from "./Articles";
-import RandomCocktail from "./RandomCocktail";
+import ListCocktails from "./ListCocktails";
 import Footer from "./footer";
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <RandomCocktail />
+      <ListCocktails />
       <Footer />  
     </div>
   )
