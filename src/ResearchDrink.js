@@ -15,10 +15,9 @@ const ResearchDrink = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="cocktail-search">Rechercher un cocktail :</label>
+      <label>Rechercher un cocktail :</label>
       <input
         type="text"
-        id="cocktail-search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
