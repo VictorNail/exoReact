@@ -1,6 +1,6 @@
 import Header from "./header";
 //import Articles from "./Articles";
-import ListCocktails from "./ListCocktails";
+import ResearchDrink from "./ResearchDrink";
 import Footer from "./footer";
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <ListCocktails />
+      <ResearchDrink />
       <Footer />  
     </div>
   )
